@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Header from './components/Header';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
@@ -10,24 +10,47 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Credits from './pages/Credits';
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+  },
+  {
+    path: '/education',
+    element: <Education />,
+  },
+  {
+    path: '/employment',
+    element: <Employment />,
+  },
+  {
+    path: '/achievements',
+    element: <Achievements />,
+  },
+  {
+    path: '/projects',
+    element: <Projects />,
+  },
+  {
+    path: '/contact',
+    element: <Contact />,
+  },
+  {
+    path: '/credits',
+    element: <Credits />,
+  },
+]);
+
 function App() {
   return (
-    <Router>
-        <Header />
-        <div className="content-container">
+    <>
+      <Header />
+      <div className="content-container">
         <Nav />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/employment" element={<Employment />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/credits" element={<Credits />} />
-        </Routes>
+        <RouterProvider router={router} />
       </div>
       <Footer />
-    </Router>
+    </>
   );
 }
 
