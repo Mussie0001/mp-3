@@ -1,13 +1,14 @@
+import { Link } from 'react-router-dom';
 function Nav() {
     return (
       <nav className="nav">
         <ul>
-          <li><a href="/" className="nav-button">Home</a></li>
-          <li><a href="/education" className="nav-button">Education</a></li>
-          <li><a href="/employment" className="nav-button">Employment</a></li>
-          <li><a href="/achievements" className="nav-button">Achievements</a></li>
-          <li><a href="/projects" className="nav-button">Projects</a></li>
-          <li><a href="/contact" className="nav-button">Contact Me</a></li>
+          <li><Link to="/" className="nav-button">Home</Link></li>
+          <li><Link to="/education" className="nav-button">Education</Link></li>
+          <li><Link to="/employment" className="nav-button">Employment</Link></li>
+          <li><Link to="/achievements" className="nav-button">Achievements</Link></li>
+          <li><Link to="/projects" className="nav-button">Projects</Link></li>
+          <li><Link to="/contact" className="nav-button">Contact Me</Link></li>
         </ul>
       </nav>
     );
