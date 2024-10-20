@@ -1,9 +1,9 @@
+import Main from '../components/Main';
 import Calculator from '../components/Calculator';
 
 function Projects() {
   return (
-    <main>
-      <h2>Elegant Equation Solver</h2>
+    <Main title="Elegant Equation Solver">
       <Calculator />
       <div className="projects-wrapper">
         <img src="/github.png" alt="GitHub" className="projects-image" />
@@ -16,7 +16,7 @@ function Projects() {
           <h3 className="year-information"><em>View my projects using the link above!</em></h3>
         </div>
       </div>
-    </main>
+    </Main>
   );
 }
 

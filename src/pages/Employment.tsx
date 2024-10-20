@@ -1,7 +1,8 @@
+import Main from '../components/Main';
+
 function Employment() {
     return (
-      <main>
-        <h2>Employment Experience</h2>
+      <Main title="Employment">
         <div className="job1-wrapper">
           <img src="/CareDx_Logo_RGB.png" alt="CareDx Logo" className="job-image" />
           <div className="job-text-content">
@@ -18,7 +19,7 @@ function Employment() {
             <h3 className="year-information"><em>August 2024 - Present</em></h3>
           </div>
         </div>
-      </main>
+      </Main>
     );
   }
   

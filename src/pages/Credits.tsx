@@ -1,7 +1,8 @@
+import Main from '../components/Main';
+
 function Credits() {
     return (
-      <main>
-        <h2>Credits</h2>
+      <Main title="Credits">
         <div className="contact1-wrapper">
           <img src="/CareDx_Logo_RGB.png" alt="CareDx Logo" className="contact-image" />
           <div className="contact-text-content">
@@ -56,7 +57,7 @@ function Credits() {
             <p>Boston University seal, source: Boston University.</p>
           </div>
         </div>
-      </main>
+      </Main>
     );
   }
   

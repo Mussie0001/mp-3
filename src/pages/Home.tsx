@@ -1,7 +1,8 @@
+import Main from '../components/Main';
+
 function Home() {
     return (
-      <main>
-        <h2>Home</h2>
+      <Main title="Home">
         <div className="content-wrapper">
           <img src="mussie.jpeg" alt="Mussie" className="Homepage-image" />
           <div className="text-content">
@@ -16,7 +17,7 @@ function Home() {
         <div className="description-content">
         <p> Welcome to my online resume, here you will find details regarding my <strong><a href="education.html">Educational</a></strong> and <strong><a href="employment.html">Employment</a></strong> history, and anything else you may find of interest.</p>
         </div>
-      </main>
+      </Main>
     );
   }
   

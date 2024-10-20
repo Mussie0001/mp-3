@@ -1,7 +1,8 @@
+import Main from '../components/Main';
+
 function Contact() {
     return (
-      <main>
-        <h2>Contact Me</h2>
+      <Main title="Contact Me">
         <div className="contact1-wrapper">
           <img src="/github.png" alt="GitHub" className="contact-image" />
           <div className="contact-text-content">
@@ -26,7 +27,7 @@ function Contact() {
             </h3>
           </div>
         </div>
-      </main>
+      </Main>
     );
   }
   

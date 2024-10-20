@@ -1,7 +1,8 @@
+import Main from '../components/Main';
+
 function Education() {
     return (
-      <main>
-        <h2>Education</h2>
+      <Main title="Education">
         <div className="education-wrapper">
           <img src="/bostonu-logo.png" alt="Boston University" className="education-image" />
           <div className="education-text-content">
@@ -25,7 +26,7 @@ function Education() {
             <h3 className="coursework-information"><em>Computer Systems</em></h3>
           </div>
         </div>
-      </main>
+      </Main>
     );
   }
   

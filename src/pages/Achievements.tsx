@@ -1,7 +1,8 @@
+import Main from '../components/Main';
+
 function Achievements() {
     return (
-      <main>
-        <h2>Achievements</h2>
+      <Main title="Achievements">
         <div className="achievement1-wrapper">
           <img src="/achievement.png" alt="Achievement" className="achievement-image" />
           <div className="achievement-text-content">
@@ -30,7 +31,7 @@ function Achievements() {
             <h3 className="year-information"><em>2023-2024</em></h3>
           </div>
         </div>
-      </main>
+      </Main>
     );
   }
   
